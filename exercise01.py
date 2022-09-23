@@ -1,6 +1,7 @@
 # exercise01
 import numpy
 from matplotlib import pyplot
+from numpy import median
 from scipy import stats
 
 # 1.1.1
@@ -35,10 +36,12 @@ valvs = stats.t.interval(alpha=0.95, df=len(myNormData00)-1, loc=
                     stats.sem(myNormData00))
 
 #2.3
-valvsx100 = myNormData00*100
+myNormData00_x100 = myNormData00 * 100
+print(myNormData00_x100)
 
 #2.4
-valvs_from1_to10 = myNormData00[1:10]
+myNormData00_1_to10 = myNormData00[1:10]
+print(myNormData00_1_to10)
 
 #2.5
 for m in myNormData00:
