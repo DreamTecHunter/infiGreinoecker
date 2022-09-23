@@ -1,4 +1,6 @@
 # exercise01
+from statistics import median
+
 import numpy
 from matplotlib import pyplot
 from scipy import stats
@@ -19,4 +21,8 @@ myUniData00 = numpy.random.uniform(0, 200, 1000000)
 # 2.1
 
 myNormData00Average = myNormData00.mean()
-print(myNormData00Average)
+myNormData00Median = median(myNormData00)
+myNormData00Max = myNormData00.max()
+myNormData00Min = myNormData00.min()
+print("\taverage" + str(myNormData00Average) + "\tmedian " + str(myNormData00Median) + "\tmin " + str(
+    myNormData00Min) + "\tmax " + str(myNormData00Max))
