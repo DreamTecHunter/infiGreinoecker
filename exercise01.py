@@ -11,7 +11,7 @@ myArangeData00 = numpy.arange(100, 200, 1)
 myArangeData01 = numpy.arange(100, 200, 2)
 
 # 1.1.3
-myArangeData02 = numpy.arange(100, 100, 0.1)
+myArangeData02 = numpy.arange(100, 110, 0.5)
 
 # 1.1.4
 myNormData00 = numpy.random.normal(0, 1, 100)
