@@ -30,8 +30,19 @@ print("\taverage" + str(myNormData00Average) + "\tmedian " + str(myNormData00Med
 
 #2.2
 
-stats.t.interval(alpha=0.95, df=len(myNormData00)-1, loc=
+valvs = stats.t.interval(alpha=0.95, df=len(myNormData00)-1, loc=
                  numpy.mean(myNormData00), scale=
                     stats.sem(myNormData00))
+
+#2.3
+valvsx100 = myNormData00*100
+
+#2.4
+valvs_from1_to10 = myNormData00[1:10]
+
+#2.5
+for m in myNormData00:
+    if m > 0:
+        print(m)
 
 
